@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylekr.css">
+</head>
+<body>
+    <div class="container">
+        <div class="kertas-kiri">
+            <div class="atas" onclick="toggleExpandri()">
+            </div>
+            <div class="tengah" id="myElementri">
+                <p style="margin-top: 70px;">Kecantikan yang Abadi
+
+                    Di tengah keramaian kota yang berkilau,
+                    Seperti embun pagi, ia hadir ceria,
+                    Dengan senyum lembut, bagai sinar purnama,
+                    Menari di hati, menorehkan cerita.
+                    
+                    Mata yang memancarkan cahaya bintang,
+                    Dalam sorotnya, ada lautan tak terukur,
+                    Seperti lukisan alam yang begitu tenang,
+                    Menggugah rasa, memberi harapan yang megah.
+                    
+                    Rambutnya bagaikan ilalang tertiup angin,
+                    Bersinar lembut, mencuri perhatian,
+                    Di setiap helai, tersimpan kisah dan impian,
+                    Seolah menggenggam seluruh keindahan zaman.
+                    
+                    Langkahnya anggun, bagai embun yang menari,
+                    Di atas padang hijau, membebaskan jiwa,
+                    Setiap gerak, melukis harmoni,
+                    Kecantikan sejati, tak akan pernah sirna.
+                    
+                    Ia adalah puisi yang hidup dan bergerak,
+                    Dengan setiap tawa, menebar pesona,
+                    Di dunia yang kadang penuh debu dan gelap,
+                    Kecantikannya bagaikan mentari yang membahana.
+                    
+                    Maka, biarkan puisi ini terukir abadi,
+                    Tentang kecantikan yang tak lekang oleh waktu,
+                    Sebuah karya, dari hati yang terpesona,
+                    Menggambarkan betapa indahnya, dirinya yang satu.</p>
+            </div>
+            <div class="bawah"></div>
+        </div>
+
+        <div class="kertas-tengah" >
+            <div class="atas" onclick="toggleExpandt()">
+            </div>
+            <div class="tengah" id="myElement">
+              <div class="scroll-content">
+                <img src="spogbob.jpeg" alt="Image 1">
+                <img src="spogbob.jpeg" alt="Image 2">
+                <img src="spogbob.jpeg" alt="Image 3">
+                <img src="spogbob.jpeg" alt="Image 1">
+                <img src="spogbob.jpeg" alt="Image 2">
+                <img src="spogbob.jpeg" alt="Image 3">
+                <!-- Tambahkan gambar lainnya -->
+            </div>
+            </div>
+            <div class="bawah"></div>
+        </div>
+
+        <div class="kertas-kanan">
+          <div class="atas" onclick="toggleExpand()"></div>
+          
+          <div class="tengah" id="myElementka">
+              <video id="myvidio" width="300px" height="200px" >
+                  <source src="musik.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+              </video>
+              <div class="controls">
+                  <button onclick="playVideo()">&#9658;</button> <!-- Play symbol -->
+                  <button onclick="pauseVideo()">&#10074;&#10074;</button> <!-- Pause symbol -->
+              </div>
+          </div>
+          
+          <div class="bawah"></div>
+      </div>
+
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

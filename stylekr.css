@@ -1,0 +1,275 @@
+
+.kertas-kiri{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.kertas-kiri .tengah{
+    margin: 0px;
+    border: 1px solid rgb(225, 179, 255);
+    padding: 0;
+    width: 320px;
+    height: 30px;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 0;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    
+}
+.kertas-kiri .tengah p{
+    color: rgb(68, 68, 68);
+    font-family: 'Oleo Script', cursive;
+}
+.kertas-kiri .atas{
+    margin-bottom: 0px;
+    width: 350px;
+    height: 50px;
+    background-color:  rgb(187, 197, 194);
+    border-radius: 35px / 15px;
+    border: 3px solid rgb(225, 179, 255);
+    position: relative;
+    z-index: 2;
+    
+
+}
+.kertas-kiri .atas::before{
+    content: '';
+    position: absolute;
+    top: -14px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+}
+.kertas-kiri .atas::after{
+    content: '';
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    /* background: #ffffff; */
+    border-top: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+    border-top: 3px solid rgb(225, 179, 255);
+    background-color: #f0f0f0;
+    box-shadow: 0px 10px 40px #7f8b8c;
+}
+.kertas-kiri .bawah{
+    margin-top: 0px;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(181, 139, 0);
+    border-radius: 35px /15px;
+    background-color:  rgb(157, 157, 157);
+    border: 3px solid rgb(225, 179, 255);
+    position: relative;
+    z-index: 3;
+
+}
+.kertas-kiri .bawah::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;;
+    margin: auto;
+    background-color: #f0f0f0;
+    box-shadow: 0px  -10px 50px #a3a9a9;
+}
+.kertas-kiri .bawah::after{
+    content: '';
+    position: absolute;
+    bottom: -14px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 3px solid rgb(170, 170, 170);
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+}
+/* .kertas-kiri .tengah:hover{
+    box-shadow: none;
+    height: 500px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    overflow: auto;
+    scrollbar-width: none; 
+} */
+/* =================== */
+
+.kertas-kanan{
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+.kertas-kanan .tengah{
+    margin: 0px;
+    border: 1px solid rgb(225, 179, 255);
+    padding: 0;
+    width: 319px;
+    height: 35px;
+    background-color: rgb(255, 255, 255);
+    flex-grow: 0;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    
+}
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Agar video menyesuaikan ukuran tanpa berubah proporsi */
+}
+
+.kertas-kanan .tengah p{
+    color: rgb(68, 68, 68);
+    font-family: 'Oleo Script', cursive;
+}
+
+#myElementka {
+  overflow: auto;
+}
+
+#myElementka::-webkit-scrollbar {
+  display: none; 
+}
+
+#myElementri {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;     
+}
+#myElementri {
+  overflow: auto;
+}
+
+#myElementri::-webkit-scrollbar {
+  display: none; 
+}
+
+#myElementkri {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;     
+}
+
+.kertas-kanan .atas{
+    margin-bottom: 0px;
+    width: 350px;
+    height: 50px;
+    background-color:  rgb(187, 197, 194);
+    border-radius: 35px / 15px;
+    border: 3px solid rgb(225, 179, 255);
+    position: relative;
+    z-index: 2;
+    
+
+}
+.kertas-kanan .atas::before{
+    content: '';
+    position: absolute;
+    top: -12px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+}
+.kertas-kanan .atas::after{
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    /* background: #ffffff; */
+    border-top: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+    border-top: 3px solid rgb(225, 179, 255);
+    background-color: #f0f0f0;
+    box-shadow: 0px 10px 40px #7f8b8c;
+}
+.kertas-kanan .bawah{
+    margin-top: 0px;
+    width: 350px;
+    height: 50px;
+    background-color: rgb(181, 139, 0);
+    border-radius: 35px /15px;
+    background-color:  rgb(157, 157, 157);
+    border: 3px solid rgb(225, 179, 255);
+    position: relative;
+    z-index: 3;
+
+}
+.kertas-kanan .bawah::before{
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 2px solid #b89260;
+    border-radius: 50%;
+    width: 320px;;
+    margin: auto;
+    background-color: #f0f0f0;
+    box-shadow: 0px  -10px 50px #a3a9a9;
+}
+.kertas-kanan .bawah::after{
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 0;
+    right: 0;
+    height: 25px;
+    background: #ffffff;
+    border-bottom: 3px solid rgb(170, 170, 170);
+    border-radius: 50%;
+    width: 320px;
+    margin: auto;
+}
+/* .kertas-kanan .tengah:hover{
+    box-shadow: none;
+    height: 600px;
+    transition-duration: 1s;
+    transition-property: all;
+    transition-delay: 0.5s;
+    overflow: auto;
+    scrollbar-width: none;
+} */
+/* Atur agar container slideshow memiliki posisi relative untuk tombol */
